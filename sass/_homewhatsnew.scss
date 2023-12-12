@@ -1,0 +1,186 @@
+.home__whatsnew {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.179);
+
+  position: relative;
+  z-index: 10;
+  padding: 90px 7%;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.home__whatsnew__title {
+  font-size: 3.3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+  // display: none;
+}
+
+.home__whatsnew__container {
+  position: relative;
+  width: 100%;
+  // background-color: rgba(0, 0, 0, 0.662);
+  border-bottom: 2px solid rgb(0, 145, 255);
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+
+  &:hover {
+    box-shadow: 33px 22px 40px 9px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 33px 22px 40px 9px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 33px 22px 40px 9px rgba(0, 0, 0, 0.16);
+  }
+
+  @media (max-width: 670px) {
+    flex-direction: column;
+  }
+}
+
+.home__whatsnew__daraz {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 40%;
+  border-right: 2px solid rgb(0, 145, 255);
+  padding: 20px 20px;
+  transition: all 0.3s linear;
+  position: relative;
+
+  background: rgb(0, 0, 0);
+
+  @media (max-width: 670px) {
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 145, 255);
+    width: 100%;
+  }
+}
+
+// .home__whatsnew__daraz__header {
+// }
+
+.home__whatsnew__daraz__header__title {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.home__whatsnew__daraz__header__label {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(0, 145, 255);
+}
+
+.home__whatsnew__daraz__lists {
+  padding-left: 20px;
+}
+
+.home__whatsnew__daraz__list {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: rgba(255, 251, 251, 0.832);
+}
+
+.home__whatsnew__daraz__link {
+  text-decoration: none;
+  font-size: 1rem;
+
+  color: rgb(0, 145, 255);
+  padding-bottom: 5px;
+  width: fit-content;
+  border-bottom: 1px solid rgb(0, 145, 255);
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: rgb(136, 0, 255);
+    border-bottom: 1px solid rgb(136, 0, 255);
+  }
+}
+
+.home__whatsnew__boost {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 60%;
+  // width: 100%;
+  padding: 20px 20px;
+  transition: all 0.3s linear;
+  z-index: 1;
+  background-color: black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: url("https://img.freepik.com/premium-vector/futuristic-business-growth-bar-chart-background-successful-financial-boost-up-arrow_514961-737.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 670px) {
+    width: 100%;
+  }
+}
+
+.home__whatsnew__boost__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home__whatsnew__boost__header__title {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.home__whatsnew__boost__header__label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(79, 145, 210);
+  max-width: 70%;
+
+  @media (max-width: 670px) {
+    max-width: 100%;
+  }
+}
+
+.home__whatsnew__boost__button__link {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.home__whatsnew__boost__button {
+  width: 19rem;
+  height: 5rem;
+  border: 1px solid rgb(0, 145, 255);
+  color: white;
+  font-weight: 300;
+
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+  transition: all ease-out 0.3s;
+  font-size: 1.7rem;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    box-shadow: inset 19rem 0 0 0 rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/logo/main logo.png" />
+
+    <!-- //swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- //main style  -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- loading screen animation 2sec -->
+
+    <div class="loading--screen">
+      <video
+        autoplay
+        loop
+        muted
+        src="./images/logo/Logo 2.mp4"
+        class="loading--screen--logo"
+      ></video>
+    </div>
+
+    <!-- ///menu  -->
+    <div class="menu">
+      <!-- Logo -->
+      <img src="./images/logo/main logo.png" alt="" class="menu__logo" />
+      <!-- list  -->
+      <ul class="menu__lists">
+        <li class="menu__list">
+          <a href="./index.html" class="menu__links">HOME</a>
+        </li>
+        <li class="menu__list">
+          <a href="#" class="menu__links dropper">SERVICES</a>
+        </li>
+        <li class="menu__list">
+          <a href="./about.html" class="menu__links">ABOUT US</a>
+        </li>
+        <li class="menu__list">
+          <a href="#" class="menu__links menu__list--active">CONTACT US</a>
+        </li>
+
+        <li class="menu__list">
+          <a href="#" class="menu__links">BLOGS</a>
+        </li>
+      </ul>
+
+      <i class="fa-solid fa-x btn--close"></i>
+    </div>
+
+    <!-- ///menu  -->
+
+    <!-- .navbar  -->
+    <nav class="navbar">
+      <a href="./index.html">
+        <img src="./images/logo/spin.gif" alt="" class="navbar__logo" />
+      </a>
+
+      <ul class="navbar__lists">
+        <li class="navbar__list">
+          <a href="./index.html" class="navbar__links">HOME</a>
+        </li>
+        <li class="navbar__list">
+          <div class="navbar__links" id="services__dropper">
+            SERVICES
+
+            <div class="dropdown">
+              <a href="#" class="dropdown__link">WEBSITE DEVELOPMENT</a>
+              <a href="#" class="dropdown__link">SEO</a>
+              <a href="#" class="dropdown__link">DIGITAL MARKETING</a>
+            </div>
+          </div>
+        </li>
+        <li class="navbar__list">
+          <a href="./about.html" class="navbar__links">ABOUT US</a>
+        </li>
+        <li class="navbar__list">
+          <a href="#" class="navbar__links navbar__list--active">CONTACT US</a>
+        </li>
+
+        <li class="navbar__list">
+          <a href="#" class="navbar__links">BLOGS</a>
+        </li>
+      </ul>
+
+      <div class="navbar__menu__icon btn--open">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- cursor  -->
+
+    <div class="cursorblur"></div>
+
+    <!-- alt image  -->
+    <img src="./images/contact.jpg" alt="" class="background__video" />
+    <!-- //// alt image end  -->
+
+    <!-- overlay -->
+    <div class="contact__background__overlay"></div>
+
+    <!-- /main -->
+    <div class="main">
+      <!-- /header -->
+      <div class="contact__header">
+        <div class="contact__header__texts">
+          <h1 class="contact__header__title">
+            Got a project to
+
+            <div class="contact__header__title__highlight">discuss?</div>
+
+            <div class="contact__header__title__border"></div>
+          </h1>
+          <p class="contact__header__label">
+            Get In Touch. we'd love to hear from you
+          </p>
+        </div>
+
+        <div class="contact__header__link">
+          <div class="contact__header__link__arrow--container">
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <h3 class="contact__header__text">Get started</h3>
+        </div>
+      </div>
+      <!-- /header -->
+
+      <div class="contact__body">
+        <div class="contact--wrapper">
+          <div class="contact__form--wrapper">
+            <form action="" class="contact__form">
+              <!-- row  -->
+              <h1
+                class="contact__form__row--header"
+                data-aos="fade-up"
+                data-aos-offset="50"
+                data-aos-duration="700"
+              >
+                Let's start a conversation
+              </h1>
+              <!-- row end -->
+
+              <!-- row  -->
+              <h1 class="contact__form__row--alert">
+                Thank you. Our team will get back to you as soon as possible
+                with an answer.
+              </h1>
+              <!-- row end -->
+
+              <!-- row  -->
+              <div class="contact__form__row">
+                <div class="contact__form__column">
+                  <label for="formname" class="contact__form__label"
+                    >Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="formname"
+                    class="contact__form__input"
+                    id="formname"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <!-- cl end  -->
+                <div class="contact__form__column">
+                  <label for="formemail" class="contact__form__label"
+                    >Email address
+                  </label>
+                  <input
+                    type="email"
+                    name="formemail"
+                    class="contact__form__input"
+                    id="formemail"
+                    placeholder="abc@company.com"
+                  />
+                </div>
+                <!-- cl end  -->
+              </div>
+              <!-- row end -->
+
+              <!-- row  -->
+              <div class="contact__form__row">
+                <div class="contact__form__column">
+                  <label for="formcontact" class="contact__form__label"
+                    >Contact No
+                  </label>
+                  <input
+                    type="tel"
+                    name="formcontact"
+                    class="contact__form__input"
+                    id="formcontact"
+                    placeholder="001-12321345"
+                  />
+                </div>
+                <!-- cl end  -->
+                <div class="contact__form__column">
+                  <label for="formcompany" class="contact__form__label"
+                    >Company</label
+                  >
+                  <input
+                    type="text"
+                    name="formcompany"
+                    class="contact__form__input"
+                    id="formcompany"
+                    placeholder="Your Company"
+                  />
+                </div>
+                <!-- cl end  -->
+              </div>
+              <!-- row end -->
+
+              <!-- row message -->
+              <div class="contact__form__column">
+                <label for="formmessage" class="contact__form__label"
+                  >Message
+                </label>
+                <input
+                  type="text"
+                  name="formmessage"
+                  class="contact__form__input"
+                  id="formmessage"
+                  placeholder="Hello there!"
+                />
+              </div>
+
+              <div class="contact__form__row--button">
+                <button class="contact__form__button" type="submit">
+                  send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__details--wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.981147111257!2d85.33991388087719!3d27.717868363619836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e9a0b1fde3%3A0x2124990af4b0a7b0!2sTantrik%20Tech%20Solutions!5e0!3m2!1sen!2snp!4v1700825921618!5m2!1sen!2snp"
+              width="100%"
+              height="300px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="contact__details__column">
+              <div class="contact__detail__row">
+                <i class="fa-solid fa-phone"></i>
+                <a
+                  href="tel:+977-9861973413"
+                  class="contact__detail__row__link"
+                >
+                  +977-9861973413
+                </a>
+              </div>
+
+              <div class="contact__detail__row">
+                <i class="fa-solid fa-envelopes-bulk"></i>
+                <a
+                  href="mailto:info@tantrikitsolutions.com"
+                  class="contact__detail__row__link"
+                  >info@tantrikitsolutions.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <!-- row1  -->
+        <div class="footer__row1">
+          <div class="footer__row1__column border--right">
+            <div class="footer__row1__icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="footer__row1__text">
+              <h3 class="footer__row1__text__header">Find us at the office</h3>
+              <a href="#" class="footer__row1__text__link"
+                >Gangahiti Marg, <br />
+                Kathmandu <br />
+                44600</a
+              >
+            </div>
+          </div>
+          <div class="footer__row1__column border--right">
+            <div class="footer__row1__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="footer__row1__text">
+              <h3 class="footer__row1__text__header">Give us a ring</h3>
+              <a href="tel:+977-9861973413" class="footer__row1__text__link"
+                >Saipal Regmi <br />
+                +977-9861973413 <br />
+                Sun - Fri, 09:00 AM - 06:00 PM</a
+              >
+            </div>
+          </div>
+          <div class="footer__row1__column">
+            <div class="footer__row1__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="footer__row1__text">
+              <h3 class="footer__row1__text__header">Mail us</h3>
+              <a
+                href="mailto:info@tantrikitsolutions.com"
+                class="footer__row1__text__link"
+                >info@tantrikitsolutions.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- row2  -->
+        <div class="footer__row2">
+          <div class="footer__row2__column">
+            <h1 class="footer__row2__column_header">Services</h1>
+            <div class="footer__row2__column__texts">
+              <a href="#" class="footer__row2__column__links"
+                >Website Development</a
+              >
+              <a href="#" class="footer__row2__column__links"
+                >Search Engine Optimization</a
+              >
+              <a href="#" class="footer__row2__column__links"
+                >Digital Marketing</a
+              >
+              <!-- <a href='#' class="footer__row2__column__links">Visual Identity System Design</a>
+            <a href='#' class="footer__row2__column__links">Online Reputation Management</a>
+            <a href='#' class="footer__row2__column__links">Daraz Marketing Services</a>
+            <a href='#' class="footer__row2__column__links">Content Creation</a> -->
+            </div>
+          </div>
+          <div class="footer__row2__column">
+            <h1 class="footer__row2__column_header">About us</h1>
+            <div class="footer__row2__column__texts">
+              <a href="#" class="footer__row2__column__links">Explore us</a>
+              <a href="#" class="footer__row2__column__links">Why Tantrik</a>
+              <a href="#" class="footer__row2__column__links"
+                >Misson and Vision</a
+              >
+              <a href="#" class="footer__row2__column__links"
+                >Discover whats new</a
+              >
+            </div>
+          </div>
+          <div class="footer__row2__column">
+            <h1 class="footer__row2__column_header">Find us</h1>
+            <div class="footer__row2__column__texts">
+              <a
+                href="https://www.facebook.com/profile.php?id=61550260470061"
+                target="_blank"
+                class="footer__row2__column__links footer___social"
+              >
+                <div class="footer__social__icons__container">
+                  <i class="fa-brands fa-facebook-f footer___social__icons"></i>
+                </div>
+                <p>Facebook</p></a
+              >
+              <a
+                href="https://www.linkedin.com/company/tantrik/mycompany/"
+                target="_blank"
+                class="footer__row2__column__links footer___social"
+              >
+                <div class="footer__social__icons__container">
+                  <i
+                    class="fa-brands fa-linkedin-in footer___social__icons"
+                  ></i>
+                </div>
+                <p>Linked-in</p></a
+              >
+              <a
+                href="https://www.instagram.com/tantrik.np/"
+                target="_blank"
+                class="footer__row2__column__links footer___social"
+              >
+                <div class="footer__social__icons__container">
+                  <i class="fa-brands fa-instagram footer___social__icons"></i>
+                </div>
+                <p>Instagram</p></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- row2  -->
+        <div class="footer__row3">
+          <div class="footer__row3__logo">
+            <img src="./images/logo/main logo.png" alt="" class="footer__img" />
+          </div>
+          <div class="footer__row3__text">
+            <h5>
+              &copy; 2023, All Rights Reserved. Tantrik Tech Solutions Pvt. Ltd
+            </h5>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer  -->
+    </div>
+    <!-- /main  -->
+
+    <!-- //gsap  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- trigger  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!--font awesome -->
+    <script
+      src="https://kit.fontawesome.com/bc8b43e70e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- main  -->
+    <script src="./js/script.js"></script>
+
+    <!-- contact -->
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

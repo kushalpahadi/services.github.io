@@ -1,0 +1,63 @@
+//main page
+.background__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.background__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.cursorblur {
+  height: 120px;
+  width: 120px;
+  background-color: rgb(15, 122, 216);
+  position: fixed;
+  z-index: 9;
+  border-radius: 50%;
+  filter: blur(120px);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+// .contact__background__overlay
+
+.contact__background__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  height: 100vh;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.76);
+}
+
+//about
+
+.about__background__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  height: 100vh;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.76);
+}
